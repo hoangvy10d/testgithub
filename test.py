@@ -32,3 +32,11 @@ bmi=BMI(height,weight)
 print("Your BMI=",bmi)
 print("Classify=",Classify(bmi))
 print("Risk of disease = ",RiskOfDisease(bmi))
+chuoi = input("Moi ban nhap chuoi:")
+if len(chuoi) <= 5:
+    print("False")
+else:
+    if chuoi[0].lower() == "a":
+        print("True")
+    else:
+        print("False")
