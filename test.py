@@ -40,3 +40,14 @@ else:
         print("True")
     else:
         print("False")
+n = int(input("Moi ban nhap so luong so:"))
+strings = []
+for i in range(1,n+1):
+    strings.append(str(input(f"Moi ban chuoi {i}:")))
+def chuoi(strings):
+    for string in strings:
+        if len(string) > 5:
+            return True
+        return False
+ketqua = chuoi(strings)
+print(ketqua)
